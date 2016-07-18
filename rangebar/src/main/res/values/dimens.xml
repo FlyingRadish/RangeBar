@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="range_bar_height">2dp</dimen>
+    <dimen name="range_bar_thumb_circle_rad">8dp</dimen>
+    <dimen name="range_bar_connection_line_stroke_width">2dp</dimen>
+</resources>
