@@ -7,7 +7,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
-import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -60,6 +59,10 @@ public class RangeBar extends View {
         mProgress = progress;
         notifyListener();
         invalidate();
+    }
+
+    public int getProgress() {
+        return mProgress;
     }
 
     public void setMax(int max) {
