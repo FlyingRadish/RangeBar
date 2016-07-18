@@ -6,7 +6,6 @@ import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
-import android.support.annotation.ColorInt;
 
 public class CircleThumb implements RangeBar.Thumb {
 
@@ -15,7 +14,7 @@ public class CircleThumb implements RangeBar.Thumb {
     private RectF mBound;
     private float mBarPadding;
 
-    public CircleThumb(Context context, @ColorInt int thumbColor) {
+    public CircleThumb(Context context, int thumbColor) {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setTextAlign(Paint.Align.CENTER);
         mPaint.setColor(thumbColor);

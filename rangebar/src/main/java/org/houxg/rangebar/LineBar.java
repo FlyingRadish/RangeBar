@@ -7,14 +7,13 @@ import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
 
 public class LineBar extends Drawable {
 
     private Paint mPaint;
     private float mHeight;
 
-    public LineBar(Context context, @ColorInt int color) {
+    public LineBar(Context context, int color) {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setColor(color);
         mHeight = context.getResources().getDimension(R.dimen.range_bar_height);

@@ -7,14 +7,13 @@ import android.graphics.Canvas;
 import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.ColorInt;
 
 public class ColoredProgressLine extends Drawable {
 
     private Paint mPaint;
     private float mStrokeWidth;
 
-    public ColoredProgressLine(Context context, @ColorInt int color) {
+    public ColoredProgressLine(Context context, int color) {
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setColor(color);
         Resources resources = context.getResources();
