@@ -61,6 +61,14 @@ public class RangeBar extends View {
         invalidate();
     }
 
+    public int getMax() {
+        return mMax;
+    }
+
+    public int getMin() {
+        return mMin;
+    }
+
     public int getProgress() {
         return mProgress;
     }
